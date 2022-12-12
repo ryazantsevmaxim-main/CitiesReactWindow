@@ -1,6 +1,6 @@
 # Cities React Window
 
-Working with a large list of data in a tree.
+Working with large lists of data in VDOM
 
 ## Run
 ```shell
