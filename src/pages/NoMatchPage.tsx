@@ -1,14 +1,11 @@
 import React, {FC} from 'react';
-import {Button} from "@mui/material";
 
 // ----------------------------------------------------------------------
 
 const NoMatchPage: FC = () => {
     return (
         <div>
-            404
-
-            <Button>qwe</Button>
+            <h1>404</h1>
         </div>
     );
 };

@@ -1,6 +1,6 @@
-export const fetchCities = () => fetch('/data/worldcities_clean.csv',{
-    headers : {
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-    }
-});
+import axios from "axios";
+
+// ----------------------------------------------------------------------
+
+export const fetchCities = () => axios.get('/worldcities_clean.csv');
+

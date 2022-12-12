@@ -9,10 +9,10 @@ import Layout from "./layouts/Layout";
 const App = () => {
     return (
         <Routes>
-            <Route path="/" element={<Layout />}>
-                <Route index element={<HomePage />} />
+            <Route path="/" element={<Layout/>}>
+                <Route index element={<HomePage/>}/>
 
-                <Route path="*" element={<NoMatch />} />
+                <Route path="*" element={<NoMatch/>}/>
             </Route>
         </Routes>
     );

@@ -1,6 +1,8 @@
-import React, {FC, useEffect} from 'react';
+import React, {FC, memo, useEffect} from 'react';
 import {useTypeDispatch} from "../redux/store";
 import {citiesRequested} from "../redux/slices/cities";
+import Box from '@mui/material/Box';
+import Cities from "../cities/Cities";
 
 // ----------------------------------------------------------------------
 
@@ -9,13 +11,13 @@ const HomePage: FC = () => {
 
     useEffect(() => {
         dispatch(citiesRequested());
-    });
+    }, [dispatch]);
 
     return (
-        <div>
-            123
-        </div>
+        <Box style={{height: "100vh"}}>
+            <Cities/>
+        </Box>
     );
 };
 
-export default HomePage;
+export default memo(HomePage);
